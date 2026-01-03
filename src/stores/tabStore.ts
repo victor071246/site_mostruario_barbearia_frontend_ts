@@ -1,11 +1,13 @@
 import { create } from "zustand";
 
+type Tab = "home" | "servico" | "localizacao";
+
 interface TabState {
-  activeTab: number;
-  setActiveTab: (tab: number) => void;
+  activeTab: Tab;
+  setActiveTab: (tab: Tab) => void;
 }
 
 export const useTabStore = create<TabState>((set) => ({
-  activeTab: 1,
+  activeTab: "home",
   setActiveTab: (tab) => set({ activeTab: tab }),
 }));

@@ -1,0 +1,16 @@
+.tabs_header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab {
+  width: 100%;
+  background: black;
+  border: 1px solid white;
+  color: white;
+  font-size: 15px;
+}
+
+.active_tab {
+  border-bottom: none;
+}

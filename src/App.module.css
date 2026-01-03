@@ -1,0 +1,8 @@
+.main_div {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  margin: 0;
+  background: black;
+  color: white;
+}
